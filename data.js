@@ -175,7 +175,6 @@ window.SITE = {
       period: "2023 — Present",
       points: [
         "Develop a convolutional spiking neural network (Conv-SNN) that detects pedestrians and predicts crossing intent in real time from event-based (DVS) cameras.",
-        "Research CfC liquid neural networks and spiking neural networks for native sequence modeling of environmental and hydrologic signals.",
         "Investigate reinforcement-learning approaches for water-resources optimization and engineering-design decision support.",
       ],
     },
