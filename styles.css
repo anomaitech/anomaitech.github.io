@@ -56,6 +56,7 @@ a:hover { text-decoration: underline; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
+.nav .wrap { max-width: 1040px; }
 .nav-inner { display: flex; align-items: center; gap: 16px; height: 60px; }
 .brand { font-family: var(--serif); font-weight: 600; font-size: 18px; color: var(--text); white-space: nowrap; }
 .brand:hover { text-decoration: none; }

@@ -144,6 +144,12 @@
   document.getElementById("footer-text").textContent =
     "© " + new Date().getFullYear() + " " + (p.name || "");
 
+  // Sections are built after load, so honor a #section link now.
+  if (location.hash.length > 1) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
+
   /* ---------- Active nav link ---------- */
   if ("IntersectionObserver" in window) {
     var navLinks = document.querySelectorAll("#nav-links a");
