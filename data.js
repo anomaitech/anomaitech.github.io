@@ -310,6 +310,14 @@ window.SITE = {
     { title: "Top 10 National Innovation Award", issuer: "Ethiopia", date: "" },
   ],
 
+  // Trainings, summer schools and conferences attended. Newest first.
+  training: [
+    { title: "APWA Utah Chapter Conference 2026", issuer: "American Public Works Association · Presented our work on the Great Salt Lake Basin", date: "2026", link: "" },
+    { title: "WaterSoftHack 2026", issuer: "Week-long training on cloud, edge, and hybrid computing for heavy computational models", date: "2026", link: "" },
+    { title: "Monitoring Groundwater Changes for Water Resources Management", issuer: "NASA ARSET advanced training · GRACE/GRACE-FO, GLDAS 2.2, and OPERA-DISP", date: "", link: "" },
+    { title: "Climate Change AI Summer School 2024", issuer: "Climate Change AI · Virtual", date: "2024", link: "" },
+  ],
+
   // Newest first. The first 8 are shown; the rest sit behind a "Show all" toggle.
   certificates: [
     {

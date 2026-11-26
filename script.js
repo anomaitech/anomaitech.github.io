@@ -49,7 +49,7 @@
 
   /* ---------- Sections ---------- */
   var sections = [];
-  function add(id, title, html) { sections.push({ id: id, title: title, html: html }); }
+  function add(id, title, html, nav) { sections.push({ id: id, title: title, html: html, nav: nav || title }); }
 
   if (has(S.about)) {
     add("about", "About", '<div class="prose">' +
@@ -121,11 +121,19 @@
     }).join("");
   }
   if (has(S.awards)) add("awards", "Awards", rows(S.awards, "Details →"));
-  if (has(S.certificates)) {
-    var first = S.certificates.slice(0, 8), rest = S.certificates.slice(8);
-    add("certificates", "Certificates", rows(first, "View credential →") +
-      (rest.length ? '<details class="more"><summary>Show all ' + S.certificates.length +
-        " certificates</summary>" + rows(rest, "View credential →") + "</details>" : ""));
+  if (has(S.certificates) || has(S.training)) {
+    var both = has(S.certificates) && has(S.training);
+    var html = "";
+    if (has(S.training)) {
+      html += (both ? '<h3 class="sub">Training &amp; conferences</h3>' : "") + rows(S.training, "Details →");
+    }
+    if (has(S.certificates)) {
+      var first = S.certificates.slice(0, 8), rest = S.certificates.slice(8);
+      html += (both ? '<h3 class="sub">Certificates</h3>' : "") + rows(first, "View credential →") +
+        (rest.length ? '<details class="more"><summary>Show all ' + S.certificates.length +
+          " certificates</summary>" + rows(rest, "View credential →") + "</details>" : "");
+    }
+    add("certificates", both ? "Certificates &amp; Training" : "Certificates", '<div class="timeline">' + html + "</div>", "Certificates");
   }
 
   var c = S.contact || {};
@@ -140,7 +148,7 @@
   }).join("");
 
   document.getElementById("nav-links").innerHTML = sections.map(function (s) {
-    return '<a href="#' + s.id + '">' + s.title + "</a>";
+    return '<a href="#' + s.id + '">' + s.nav + "</a>";
   }).join("");
 
   document.getElementById("footer-text").textContent =
