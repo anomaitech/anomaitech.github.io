@@ -113,7 +113,7 @@
     return '<div class="entries">' + list.map(function (e) {
       return '<div class="entry reveal"><span class="meta">' + esc(e.period) + "</span>" +
         "<h4>" + esc(e.role) + "</h4>" +
-        (e.org ? '<div class="org">' + esc(e.org) + "</div>" : "") +
+        (e.org ? '<div class="org">' + (link(e.org + " ↗", e.url) || esc(e.org)) + "</div>" : "") +
         (e.text ? "<p>" + esc(e.text) + "</p>" : "") +
         bullets(e.points) + "</div>";
     }).join("") + "</div>";

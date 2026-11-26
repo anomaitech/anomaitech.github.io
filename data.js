@@ -24,6 +24,7 @@ window.SITE = {
     links: [
       { label: "GitHub", url: "https://github.com/anomaitech" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/henok-kiflom-teklu-903a12a5" },
+      { label: "Hydroinformatics Lab", url: "https://hydroinformatics.byu.edu/" },
       { label: "Google Scholar", url: "" }, // add your Scholar profile URL
       { label: "Email", url: "mailto:anommltech@gmail.com" },
     ],
@@ -167,7 +168,8 @@ window.SITE = {
   experience: [
     {
       role: "Graduate Research Assistant",
-      org: "Brigham Young University",
+      org: "BYU Hydroinformatics Lab, Brigham Young University",
+      url: "https://hydroinformatics.byu.edu/",
       period: "Sep 2024 — Present",
       points: [
         "Develop a seasonality-gated matrix-completion and liquid neural network (MC+LNN) framework to impute multi-decadal groundwater time series from sparse, irregular well observations.",
