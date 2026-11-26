@@ -271,9 +271,37 @@ window.SITE = {
     { title: "Top 10 National Innovation Award", issuer: "Ethiopia", date: "" },
   ],
 
-  // Add your certificates here — the section appears once this list is not empty.
-  // { title: "Certificate name", issuer: "Issuing organization", date: "2026", link: "https://..." }
-  certificates: [],
+  // Newest first. The first 8 are shown; the rest sit behind a "Show all" toggle.
+  certificates: [
+    { title: "Databricks Fundamentals Accreditation", issuer: "Databricks", date: "Jun 2025", link: "" },
+    { title: "AWS Learning: Cloud Essentials", issuer: "Amazon Web Services (AWS)", date: "May 2023", link: "https://www.credly.com/badges/83453d9b-408c-489d-b850-08267d09a4a9/public_url" },
+    { title: "Google Cloud Certified", issuer: "Google", date: "Mar 2023", link: "http://adscerts.com/scholar/5B93D295139E6DC" },
+    { title: "Advanced Deep Learning and Computer Vision", issuer: "Simplilearn", date: "Sep 2022", link: "https://certificates.simplicdn.net/share/thumb_3792618.png" },
+    { title: "PGP AI – Deep Learning with TensorFlow and Keras", issuer: "Simplilearn", date: "Aug 2022", link: "https://certificates.simplicdn.net/share/thumb_3665446.png" },
+    { title: "Enterprise Design Thinking – Team Essentials for AI", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/1ddfc809-4217-48ff-945f-b1a3eeb3b04f/public_url" },
+    { title: "Quantum Computing", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/70bff2a9-3e42-4715-b514-3be56162f9f7/public_url" },
+    { title: "Project Management Fundamentals", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/23064ea0-7152-407c-a4d6-b7e349de63dc/public_url" },
+    { title: "Enterprise Design Thinking Practitioner", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/a0e0996b-a98d-4b16-b1fc-81a1461ee777/public_url" },
+    { title: "Internet of Things", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/ca12c3c9-e6dc-49de-ae32-b702dccb472b/public_url" },
+    { title: "PGP AI – Machine Learning", issuer: "Simplilearn", date: "Jun 2022", link: "https://certificates.simplicdn.net/share/thumb_3532256.png" },
+    { title: "Introduction to SQL", issuer: "DataCamp", date: "May 2022", link: "https://www.datacamp.com/statement-of-accomplishment/course/72f5a529fc013fd88d2d73c9d3b0a7087462ce76?share=true" },
+    { title: "PGP AI – Data Science with Python", issuer: "Simplilearn", date: "Apr 2022", link: "https://certificates.simplicdn.net/share/thumb_3396826.png" },
+    { title: "Predict Using IBM Watson Studio", issuer: "IBM", date: "Apr 2022", link: "https://www.credly.com/badges/7c5bff5b-4e24-4054-8f73-6e4bd1cc5651/public_url" },
+    { title: "Healthcare Industry", issuer: "IBM", date: "Apr 2022", link: "https://www.credly.com/badges/fd7822eb-a645-491c-8635-cbe53ef88ab8/public_url" },
+    { title: "Government Industry", issuer: "IBM", date: "Apr 2022", link: "https://www.credly.com/badges/b0e7ed54-88af-4f89-8748-17203afb57ba/public_url" },
+    { title: "Data Analysis with Python", issuer: "freeCodeCamp", date: "Mar 2022", link: "https://freecodecamp.org/certification/henok37/data-analysis-with-python-v7" },
+    { title: "Artificial Intelligence V2", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/c42c9fa5-e0c5-467a-8b74-16d815b8f4b9/public_url" },
+    { title: "Communicating Insights", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/b02c5671-8078-4e26-b826-c21af3b80347/public_url" },
+    { title: "Data Classification Models", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/89ef2fd7-6463-4437-808e-77a988ab25a1/public_url" },
+    { title: "Data Understanding and Preparation", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/302b850d-ca0a-48e9-82e1-c2844e8d8278/public_url" },
+    { title: "DevOps", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/023fd2ad-fff5-485e-b564-8d3d377900c2/public_url" },
+    { title: "Data Science Fundamentals", issuer: "IBM", date: "Mar 2022", link: "https://www.credly.com/badges/7af0aeea-bf02-44f9-8cf5-f377ab5352c9/public_url" },
+    { title: "Artificial Intelligence Intro", issuer: "IBM", date: "Feb 2022", link: "" },
+    { title: "Data Science and Analytics", issuer: "IBM", date: "Feb 2022", link: "https://www.credly.com/go/416NOqRT" },
+    { title: "Tableau Training", issuer: "Simplilearn", date: "Feb 2022", link: "https://simpli.app.link/EDg5sZE6Jnb" },
+    { title: "Python for Data Science", issuer: "IBM", date: "Feb 2022", link: "https://courses.skillsnet.simplilearn.com/certificates/91fcde981e7b478aa1ba9c316caf7578" },
+    { title: "PGP AI – Python for Data Science", issuer: "Simplilearn", date: "Feb 2022", link: "https://certificates.simplicdn.net/share/thumb_3253638.png" },
+  ],
 
   contact: {
     text: "I am glad to hear about research collaborations, AI for water and infrastructure, and opportunities in applied AI and hydroinformatics.",

@@ -146,6 +146,10 @@ a:hover { text-decoration: underline; }
 .cert .issuer { color: var(--muted); font-size: 14.5px; }
 .cert .right { flex: none; text-align: right; font-size: 14px; }
 
+.more { border-top: 1px solid var(--line); }
+.more summary { cursor: pointer; padding: 14px 0; color: var(--accent); font-size: 14.5px; font-weight: 500; }
+.more[open] summary { border-bottom: 1px solid var(--line); }
+
 .footer { display: flex; justify-content: space-between; gap: 16px; padding-top: 28px; padding-bottom: 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
 
 @media (max-width: 640px) {

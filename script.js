@@ -115,7 +115,12 @@
     }).join("");
   }
   if (has(S.awards)) add("awards", "Awards", rows(S.awards, "Details →"));
-  if (has(S.certificates)) add("certificates", "Certificates", rows(S.certificates, "View credential →"));
+  if (has(S.certificates)) {
+    var first = S.certificates.slice(0, 8), rest = S.certificates.slice(8);
+    add("certificates", "Certificates", rows(first, "View credential →") +
+      (rest.length ? '<details class="more"><summary>Show all ' + S.certificates.length +
+        " certificates</summary>" + rows(rest, "View credential →") + "</details>" : ""));
+  }
 
   var c = S.contact || {};
   if (c.text || c.email) {
