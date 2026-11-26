@@ -58,7 +58,7 @@ window.SITE = {
   skills: [
     {
       group: "Artificial intelligence",
-      items: ["Deep learning", "Liquid neural networks (CfC/LTC)", "Spiking neural networks", "Reinforcement learning", "Time-series imputation", "Matrix completion", "Computer vision", "Physics-informed ML"],
+      items: ["Deep learning", "GeoAI", "Liquid neural networks (CfC/LTC)", "Spiking neural networks", "Reinforcement learning", "Time-series imputation", "Matrix completion", "Computer vision", "Physics-informed ML"],
     },
     {
       group: "AI/ML frameworks",
