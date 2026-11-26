@@ -321,7 +321,7 @@ window.SITE = {
   training: [
     { title: "APWA Utah Chapter Conference 2026", issuer: "American Public Works Association · Presenter: Great Salt Lake Basin groundwater research", date: "2026", link: "" },
     { title: "WaterSoftHack 2026", issuer: "Week-long training on cloud, edge, and hybrid computing for heavy computational models", date: "2026", link: "" },
-    { title: "Monitoring Groundwater Changes for Water Resources Management", issuer: "NASA ARSET advanced training · GRACE/GRACE-FO, GLDAS 2.2, and OPERA-DISP", date: "", link: "" },
+    { title: "Monitoring Groundwater Changes for Water Resources Management", issuer: "NASA ARSET advanced training · GRACE/GRACE-FO, GLDAS 2.2, and OPERA-DISP", date: "Apr 2025", link: "" },
     { title: "Climate Change AI Summer School 2024", issuer: "Climate Change AI · Virtual", date: "2024", link: "" },
   ],
 
