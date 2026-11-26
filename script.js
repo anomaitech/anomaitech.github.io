@@ -125,7 +125,7 @@
     var both = has(S.certificates) && has(S.training);
     var html = "";
     if (has(S.training)) {
-      html += (both ? '<h3 class="sub">Training &amp; conferences</h3>' : "") + rows(S.training, "Details →");
+      html += (both ? '<h3 class="sub">Training</h3>' : "") + rows(S.training, "Details →");
     }
     if (has(S.certificates)) {
       var first = S.certificates.slice(0, 8), rest = S.certificates.slice(8);
