@@ -113,6 +113,8 @@
     return list.map(function (c) {
       return '<div class="cert"><div><h3>' + esc(c.title) + '</h3><div class="issuer">' + esc(c.issuer) + "</div>" +
         (has(c.links) ? '<div class="sublinks">' + c.links.map(function (l) { return link(l.label, l.url); }).join("") + "</div>" : "") +
+        (has(c.modules) ? '<details class="modules"><summary>Show ' + c.modules.length + " modules</summary><ul>" +
+          c.modules.map(function (m) { return "<li>" + (link(m.label, m.url) || esc(m.label)) + "</li>"; }).join("") + "</ul></details>" : "") +
         "</div>" +
         '<div class="right"><span class="meta">' + esc(c.date) + "</span>" +
         (href(c.link) ? "<br>" + link(linkLabel, c.link) : "") + "</div></div>";
