@@ -109,7 +109,9 @@
 
   function rows(list, linkLabel) {
     return list.map(function (c) {
-      return '<div class="cert"><div><h3>' + esc(c.title) + '</h3><div class="issuer">' + esc(c.issuer) + "</div></div>" +
+      return '<div class="cert"><div><h3>' + esc(c.title) + '</h3><div class="issuer">' + esc(c.issuer) + "</div>" +
+        (has(c.links) ? '<div class="sublinks">' + c.links.map(function (l) { return link(l.label, l.url); }).join("") + "</div>" : "") +
+        "</div>" +
         '<div class="right"><span class="meta">' + esc(c.date) + "</span>" +
         (href(c.link) ? "<br>" + link(linkLabel, c.link) : "") + "</div></div>";
     }).join("");

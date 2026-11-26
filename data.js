@@ -311,9 +311,16 @@ window.SITE = {
   certificates: [
     {
       title: "Microsoft Azure AI Fundamentals — 5 learning paths",
-      issuer: "Microsoft Learn · AI Overview, Generative AI, Natural Language Processing, Document Intelligence & Knowledge Mining, Computer Vision (22 modules)",
+      issuer: "Microsoft Learn · 22 modules",
       date: "", // add the year, e.g. "May 2026"
       link: "", // add your Microsoft Learn transcript share link
+      links: [
+        { label: "AI Overview", url: "https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/" },
+        { label: "Generative AI", url: "https://learn.microsoft.com/en-us/training/paths/introduction-generative-ai/" },
+        { label: "Natural Language Processing", url: "https://learn.microsoft.com/en-us/training/paths/explore-natural-language-processing/" },
+        { label: "Document Intelligence & Knowledge Mining", url: "https://learn.microsoft.com/en-us/training/paths/document-intelligence-knowledge-mining/" },
+        { label: "Computer Vision", url: "https://learn.microsoft.com/en-us/training/paths/explore-computer-vision-microsoft-azure/" },
+      ],
     },
     { title: "Databricks Fundamentals Accreditation", issuer: "Databricks", date: "Jun 2025", link: "" },
     { title: "AWS Learning: Cloud Essentials", issuer: "Amazon Web Services (AWS)", date: "May 2023", link: "https://www.credly.com/badges/83453d9b-408c-489d-b850-08267d09a4a9/public_url" },
