@@ -60,13 +60,13 @@ a:hover { text-decoration: underline; }
 .brand { font-family: var(--serif); font-weight: 600; font-size: 18px; color: var(--text); white-space: nowrap; }
 .brand:hover { text-decoration: none; }
 #nav-links {
-  display: flex; gap: 4px; margin-left: auto;
+  display: flex; gap: 2px; margin-left: auto;
   overflow-x: auto; scrollbar-width: none;
 }
 #nav-links::-webkit-scrollbar { display: none; }
 #nav-links a {
   color: var(--muted); font-size: 14px; font-weight: 500;
-  padding: 6px 10px; border-radius: 6px; white-space: nowrap;
+  padding: 6px 8px; border-radius: 6px; white-space: nowrap;
 }
 #nav-links a:hover, #nav-links a.active { color: var(--text); background: var(--accent-soft); text-decoration: none; }
 .theme-btn {
@@ -144,6 +144,7 @@ a:hover { text-decoration: underline; }
 .cert:last-child { border-bottom: 0; }
 .cert h3 { font-size: 16px; font-weight: 600; margin: 0; }
 .cert .issuer { color: var(--muted); font-size: 14.5px; }
+.sublinks { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; font-size: 14px; }
 .cert .right { flex: none; text-align: right; font-size: 14px; }
 
 .more { border-top: 1px solid var(--line); }
