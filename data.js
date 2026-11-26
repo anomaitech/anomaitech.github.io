@@ -170,7 +170,7 @@ window.SITE = {
       ],
     },
     {
-      role: "Research Assistant",
+      role: "PhD Research",
       org: "Alma Mater Europaea",
       period: "2023 — Present",
       points: [
