@@ -14,6 +14,13 @@ window.SITE = {
     summary:
       "I build AI for water and public infrastructure: liquid and spiking neural networks, reinforcement learning, and machine learning for satellite Earth observation, grounded in more than ten years of designing dams, irrigation schemes, and water-supply systems.",
     resume: "", // e.g. "assets/resume.pdf" — leave empty to hide the button
+    // Headline numbers shown under the introduction.
+    stats: [
+      { value: "2", label: "concurrent PhDs, in applied AI and hydroinformatics" },
+      { value: "9 yrs", label: "of water engineering practice" },
+      { value: "20,000+ ha", label: "of irrigation command area designed" },
+      { value: "5", label: "papers and preprints" },
+    ],
     links: [
       { label: "GitHub", url: "https://github.com/anomaitech" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/henok-kiflom-teklu-903a12a5" },
