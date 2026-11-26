@@ -8,6 +8,19 @@ window.SITE = {
     name: "Henok Teklu",
     initials: "HT",
     photo: "", // e.g. "assets/photo.jpg" — leave empty to show initials
+    // Hero: the small label, the big headline (*word* is shown in the accent color),
+    // and the credential line under the buttons.
+    kicker: "Applied AI · Hydroinformatics · GeoAI",
+    tagline: "Smarter models for *water* and *infrastructure.*",
+    credential: {
+      title: "PhD Candidate · Applied AI & Hydroinformatics",
+      sub: "Brigham Young University · Alma Mater Europaea",
+    },
+    citeAs: "Teklu, H.", // your name as it appears in author lists (shown in bold)
+    affiliations: [
+      { short: "BYU", name: "Hydroinformatics Lab, Brigham Young University" },
+      { short: "AMEU", name: "Applied Artificial Intelligence, Alma Mater Europaea" },
+    ],
     headline: "Applied AI & Hydroinformatics PhD Candidate",
     subline: "Water Data Scientist · Water Resources Engineer",
     location: "Provo, Utah, USA",
