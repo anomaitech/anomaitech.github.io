@@ -309,6 +309,12 @@ window.SITE = {
 
   // Newest first. The first 8 are shown; the rest sit behind a "Show all" toggle.
   certificates: [
+    {
+      title: "Microsoft Azure AI Fundamentals — 5 learning paths",
+      issuer: "Microsoft Learn · AI Overview, Generative AI, Natural Language Processing, Document Intelligence & Knowledge Mining, Computer Vision (22 modules)",
+      date: "", // add the year, e.g. "May 2026"
+      link: "", // add your Microsoft Learn transcript share link
+    },
     { title: "Databricks Fundamentals Accreditation", issuer: "Databricks", date: "Jun 2025", link: "" },
     { title: "AWS Learning: Cloud Essentials", issuer: "Amazon Web Services (AWS)", date: "May 2023", link: "https://www.credly.com/badges/83453d9b-408c-489d-b850-08267d09a4a9/public_url" },
     { title: "Google Cloud Certified", issuer: "Google", date: "Mar 2023", link: "http://adscerts.com/scholar/5B93D295139E6DC" },
