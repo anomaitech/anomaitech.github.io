@@ -321,6 +321,7 @@ window.SITE = {
     { title: "Databricks Fundamentals Accreditation", issuer: "Databricks", date: "Jun 2025", link: "" },
     { title: "AWS Learning: Cloud Essentials", issuer: "Amazon Web Services (AWS)", date: "May 2023", link: "https://www.credly.com/badges/83453d9b-408c-489d-b850-08267d09a4a9/public_url" },
     { title: "Google Cloud Certified", issuer: "Google", date: "Mar 2023", link: "http://adscerts.com/scholar/5B93D295139E6DC" },
+    { title: "Postgraduate Program in Artificial Intelligence and Machine Learning", issuer: "Purdue University", date: "Jan – Oct 2022", link: "" },
     { title: "Advanced Deep Learning and Computer Vision", issuer: "Simplilearn", date: "Sep 2022", link: "https://certificates.simplicdn.net/share/thumb_3792618.png" },
     { title: "PGP AI – Deep Learning with TensorFlow and Keras", issuer: "Simplilearn", date: "Aug 2022", link: "https://certificates.simplicdn.net/share/thumb_3665446.png" },
     { title: "Enterprise Design Thinking – Team Essentials for AI", issuer: "IBM", date: "Jun 2022", link: "https://www.credly.com/badges/1ddfc809-4217-48ff-945f-b1a3eeb3b04f/public_url" },
