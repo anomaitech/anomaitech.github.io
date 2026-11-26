@@ -312,7 +312,7 @@ window.SITE = {
       title: "Microsoft Azure AI Fundamentals — 5 learning paths",
       issuer: "Microsoft Learn · 22 modules",
       date: "", // add the year, e.g. "May 2026"
-      link: "https://learn.microsoft.com/en-us/users/henokteklu-9986/achievements/ur2pek83",
+      link: "https://learn.microsoft.com/en-us/users/henokteklu-9986/",
     },
     { title: "Databricks Fundamentals Accreditation", issuer: "Databricks", date: "Jun 2025", link: "" },
     { title: "AWS Learning: Cloud Essentials", issuer: "Amazon Web Services (AWS)", date: "May 2023", link: "https://www.credly.com/badges/83453d9b-408c-489d-b850-08267d09a4a9/public_url" },
