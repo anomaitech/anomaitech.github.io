@@ -347,7 +347,7 @@ window.SITE = {
   ],
 
   contact: {
-    text: "I am glad to hear about research collaborations, AI for water and infrastructure, and opportunities in applied AI and hydroinformatics.",
+    text: "I am glad to hear about research collaborations, AI for water and infrastructure, and opportunities in applied AI, GeoAI, and hydroinformatics.",
     email: "anommltech@gmail.com",
   },
 };
