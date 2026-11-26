@@ -84,6 +84,23 @@ window.SITE = {
 
   projects: [
     {
+      title: "GEOGloWS Runoff Bias Correction",
+      featured: true, // shown full width with the bullet points below
+      period: "Google-funded · Brigham Young University · Sep 2026 — Present",
+      description:
+        "GEOGloWS forecasts streamflow for rivers worldwide by routing ERA5 runoff through a global river network. Most bias correction fixes the discharge afterwards, one gauge at a time. I correct the runoff itself, before routing, so the improvement travels down the network and the existing routing stays unchanged.",
+      points: [
+        "An LSTM learns corrected runoff directly: its training target is observed gauge discharge \"un-routed\" back to lateral inflow with a linear-reservoir inverse, and it is validated with 6-fold basin holdout so skill is measured on catchments it never saw.",
+        "The catchment runoff is distributed to river reaches while conserving mass: by catchment area in humid regions, and by the ERA5 runoff-generation pattern in arid ones, so water is not spread over dry ground.",
+        "The result is calibrated at gauged reaches (variance scaling or quantile mapping) and rasterized to a 0.25° daily runoff grid that drops into the same GEOGloWS Muskingum routing.",
+        "Across 219 held-out catchments, KGE rises from 0.52 for raw GEOGloWS to 0.62 with the correction baked into the grid, and 0.65 with an added post-routing step. Quantile-mapping the raw output alone reaches only about 0.49; the LSTM's timing improvement makes the difference.",
+        "A forecast-ready variant uses only ECMWF-native inputs, so one model serves both the retrospective record and the 1–15 day forecast.",
+      ],
+      tags: ["Streamflow forecasting", "LSTM", "Bias correction", "Muskingum routing", "ERA5", "PyTorch"],
+      link: "",
+      repo: "https://github.com/anomaitech/geoglows_grid_runoff_correction",
+    },
+    {
       title: "CanalForge",
       period: "Terrain-aware irrigation network design",
       description:
@@ -100,15 +117,6 @@ window.SITE = {
       tags: ["Tethys Platform", "No-code", "Web apps"],
       link: "",
       repo: "",
-    },
-    {
-      title: "GEOGloWS Runoff Bias Correction",
-      period: "LSTM · Python",
-      description:
-        "A 0.25° gridded daily runoff product corrected with an LSTM, built to replace the raw ERA5 runoff that GEOGloWS routes into global streamflow forecasts. The correction is applied at the runoff level, before the unchanged Muskingum routing.",
-      tags: ["Streamflow", "LSTM", "GEOGloWS"],
-      link: "",
-      repo: "https://github.com/anomaitech/geoglows_grid_runoff_correction",
     },
     {
       title: "Unsupervised Spiking Feature Learning",
@@ -165,7 +173,7 @@ window.SITE = {
       points: [
         "Develop a seasonality-gated matrix-completion and liquid neural network (MC+LNN) framework to impute multi-decadal groundwater time series from sparse, irregular well observations.",
         "Estimate basin-wide groundwater storage change in the Great Salt Lake Basin by integrating GRACE/GRACE-FO, GLDAS, CHIRPS, and in-situ well data; first-author results validated against an independent GPS-based vertical-displacement estimate.",
-        "GEOGloWS (Google-funded): machine-learning bias correction of global streamflow forecasts, applied at the runoff level before routing.",
+        "GEOGloWS (Google-funded, Sep 2026 — present): machine-learning bias correction of global streamflow forecasts. An LSTM corrects ERA5 runoff before routing and delivers a 0.25° daily runoff grid for the existing Muskingum routing, raising KGE from 0.52 to 0.62–0.65 across 219 held-out catchments.",
         "Extended the GRACE Groundwater Subsetting Tool (GGST) with GLDAS integration on the Tethys web platform.",
       ],
     },

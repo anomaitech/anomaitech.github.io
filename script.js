@@ -71,9 +71,11 @@
   if (has(S.projects)) {
     add("projects", "Projects", '<div class="grid">' + S.projects.map(function (x) {
       var links = link("View project →", x.link) + link("Source code", x.repo);
-      return '<article class="card">' +
+      return '<article class="card' + (x.featured ? " featured" : "") + '">' +
         (x.period ? '<span class="meta">' + esc(x.period) + "</span>" : "") +
-        "<h3>" + esc(x.title) + "</h3><p>" + esc(x.description) + "</p>" + tags(x.tags) +
+        "<h3>" + esc(x.title) + "</h3><p>" + esc(x.description) + "</p>" +
+        (has(x.points) ? "<ul>" + x.points.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" : "") +
+        tags(x.tags) +
         (links ? '<div class="card-links">' + links + "</div>" : "") +
         "</article>";
     }).join("") + "</div>");
