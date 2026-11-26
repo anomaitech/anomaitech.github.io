@@ -102,6 +102,42 @@ window.SITE = {
       repo: "",
     },
     {
+      title: "GEOGloWS Runoff Bias Correction",
+      period: "LSTM · Python",
+      description:
+        "A 0.25° gridded daily runoff product corrected with an LSTM, built to replace the raw ERA5 runoff that GEOGloWS routes into global streamflow forecasts. The correction is applied at the runoff level, before the unchanged Muskingum routing.",
+      tags: ["Streamflow", "LSTM", "GEOGloWS"],
+      link: "",
+      repo: "https://github.com/anomaitech/geoglows_grid_runoff_correction",
+    },
+    {
+      title: "Unsupervised Spiking Feature Learning",
+      period: "Event-based pedestrian crossing detection",
+      description:
+        "A single layer of spiking neurons trained with local winner-take-all STDP learns features from unlabelled DVS-PedX event frames; only a linear readout is supervised. Reaches 90.3% accuracy and 0.936 AUROC, within 0.007 AUROC of a fully supervised spiking network.",
+      tags: ["Spiking neural networks", "STDP", "Event cameras"],
+      link: "https://arxiv.org/abs/2609.31671",
+      repo: "https://github.com/anomaitech/anomaitech-unsupervised_snn_pedx",
+    },
+    {
+      title: "Great Salt Lake Basin Groundwater Story",
+      period: "Interactive presentation",
+      description:
+        "A browser-based, map-driven presentation of the groundwater storage trends study for the Great Salt Lake Basin, 2002–2024.",
+      tags: ["Groundwater", "GRACE", "Visualization"],
+      link: "https://anomaitech.github.io/gslb_presentation/",
+      repo: "https://github.com/anomaitech/gslb_presentation",
+    },
+    {
+      title: "GWapp",
+      period: "Tethys Platform app",
+      description:
+        "A groundwater well analysis and visualization app: upload well data as CSV, map columns to a schema, organize by basin, and explore well locations and time series on an interactive map.",
+      tags: ["Tethys Platform", "Groundwater", "Web GIS"],
+      link: "",
+      repo: "https://github.com/anomaitech/tethys_gslb",
+    },
+    {
       title: "Spiking Actor-Critic RL Agent",
       period: "snnTorch · PyTorch",
       description:
