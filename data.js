@@ -227,7 +227,7 @@ window.SITE = {
       role: "PhD Candidate, Applied Artificial Intelligence",
       org: "Alma Mater Europaea, Slovenia (online)",
       period: "Expected Dec 2027",
-      text: "Liquid neural networks, spiking neural networks, and reinforcement learning for civil and environmental systems, including road safety. GPA 9.9/10.",
+      text: "Spiking neural networks and reinforcement learning for civil and environmental systems, including road safety. GPA 9.9/10.",
     },
     {
       role: "MSc, Water & Sustainable Development (Hydroinformatics & Digital Innovation)",
