@@ -232,7 +232,7 @@ h3.sub { font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transfor
   .brand > span:last-child { display: none; }
   .hero { padding-top: 44px; }
   .hello { margin-top: 26px; font-size: 17px; }
-  .pill { font-size: 10.5px; letter-spacing: .1em; padding: 7px 13px; }
+  .pill { font-size: 10px; letter-spacing: .04em; padding: 7px 12px; white-space: nowrap; }
   .hero-card { aspect-ratio: 5 / 4; border-radius: 18px; }
   .stats { margin-top: 48px; }
   .stats li { padding: 20px; }
