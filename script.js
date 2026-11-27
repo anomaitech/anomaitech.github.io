@@ -82,12 +82,12 @@
       (label ? "<span>" + esc(label) + "</span>" : "") + "</div>";
   }
   var ICONS = [
-    '<path d="M3 9c3-3 5 3 8 0s5 3 8 0M3 15c3-3 5 3 8 0s5 3 8 0"/>',
-    '<path d="M2 13h4l2-7 3 13 3-9 2 3h6"/>',
+    '<path d="M3 20h18M8 20l2-14h4l2 14"/><path d="M3 11h6M3 15h5"/>',
     '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
-    '<path d="M4 12a8 8 0 0 1 14-5l2-2v6h-6l2-2a5 5 0 1 0 1 6"/>',
+    '<circle cx="12" cy="5" r="2"/><path d="M12 8v6M8 11l4-2 4 2M9 21l3-7 3 7"/>',
     '<path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/>',
-    '<circle cx="12" cy="5" r="2"/><path d="M12 8v6M8 11l4-2 4 2M9 21l3-7 3 7"/>'
+    '<path d="M3 9c3-3 5 3 8 0s5 3 8 0M3 15c3-3 5 3 8 0s5 3 8 0"/>',
+    '<path d="M4 12a8 8 0 0 1 14-5l2-2v6h-6l2-2a5 5 0 1 0 1 6"/>'
   ];
   var CARD_COLORS = ["c-navy", "c-teal", "c-rust", "c-plum", "c-forest", "c-slate"];
 
@@ -121,7 +121,7 @@
     "</div>" +
     '<figure class="hero-card">' +
     (href(p.photo) ? '<img src="' + href(p.photo) + '" alt="Portrait of ' + esc(p.name) + '">' : heroArt()) +
-    (href(p.photo) ? "" : '<figcaption class="top">Groundwater · Satellites · AI</figcaption>' +
+    (href(p.photo) ? "" : '<figcaption class="top">Water · Infrastructure · AI</figcaption>' +
       '<figcaption class="bottom"><small>Sparse wells, satellite signals</small><strong>One continuous picture</strong></figcaption>') +
     "</figure>" +
     "</div>" +
@@ -135,7 +135,7 @@
     var quick = link("Hydroinformatics Lab ↗", urlOf("Hydroinformatics Lab")) + link("LinkedIn ↗", urlOf("LinkedIn")) +
       link("GitHub ↗", urlOf("GitHub")) + link("Google Scholar ↗", urlOf("Google Scholar")) + '<a href="#contact">Contact me ↗</a>';
     add({
-      id: "about", nav: "About", kicker: "About", title: "Engineer first. *AI researcher* now.", split: true,
+      id: "about", nav: "About", kicker: "About", title: "A civil engineer who *builds with AI.*", split: true,
       html: '<p class="lead">' + esc(S.about[0]) + "</p>" +
         S.about.slice(1).map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") +
         (has(p.affiliations) ? '<div class="box"><h3>Affiliations</h3><dl>' + p.affiliations.map(function (a) {
@@ -148,7 +148,7 @@
   if (has(S.interests)) {
     add({
       id: "research", nav: "Research", kicker: "Research", title: "Research *interests.*", tint: true,
-      blurb: "Where neural networks meet hydrology, Earth observation, and the infrastructure people rely on.",
+      blurb: "Civil and water engineering problems first, then the AI methods I bring to them.",
       html: '<div class="color-grid">' + S.interests.map(function (i, n) {
         return '<article class="color-card ' + CARD_COLORS[n % CARD_COLORS.length] + ' reveal"><span class="num">' + pad(n + 1) + "</span>" +
           '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">' + ICONS[n % ICONS.length] + "</svg>" +
@@ -160,7 +160,7 @@
   if (has(S.projects)) {
     add({
       id: "projects", nav: "Projects", kicker: "Selected work", title: "Featured *projects.*",
-      blurb: "Research software and tools. Links are shown where the code or a live version is public.",
+      blurb: "Engineering design tools and water research software. Links are shown where the code or a live version is public.",
       html: '<div class="project-grid">' + S.projects.map(function (x, n) {
         var links = link("View project ↗", x.link) + link("Source code ↗", x.repo);
         return '<article class="project reveal">' + banner(n, x.period) + '<div class="project-body">' +
@@ -185,7 +185,7 @@
   if (has(S.experience) || has(S.education)) {
     add({
       id: "experience", nav: "Experience", kicker: "Background", title: "Experience & *education.*", tint: true,
-      blurb: "From designing dams and irrigation schemes in Ethiopia to AI research in the United States and Europe.",
+      blurb: "From designing dams and irrigation schemes in Ethiopia to hydroinformatics and AI research in the United States and Europe.",
       html: (has(S.experience) ? '<h3 class="sub">Experience</h3>' + entries(S.experience) : "") +
         (has(S.education) ? '<h3 class="sub">Education</h3>' + entries(S.education) : "")
     });
@@ -252,7 +252,7 @@
       .map(function (l) { return link(l.label + " ↗", l.url, "btn ghost"); }).join("");
     contactHtml = '<section class="contact" id="contact"><div class="wrap">' +
       '<span class="kicker">' + pad(sections.length + 1) + " / Contact</span>" +
-      "<h2>" + em(c.heading || "Let’s work on *water and AI* together.") + "</h2>" +
+      "<h2>" + em(c.heading || "Let’s work on *water infrastructure* together.") + "</h2>" +
       (c.text ? "<p>" + esc(c.text) + "</p>" : "") +
       '<div class="actions">' + (c.email ? link(c.email + " ↗", "mailto:" + c.email, "btn light") : "") + others + "</div>" +
       "</div></section>";

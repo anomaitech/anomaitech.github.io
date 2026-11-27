@@ -10,10 +10,10 @@ window.SITE = {
     photo: "", // e.g. "assets/photo.jpg" — leave empty to show initials
     // Hero: the small label, the big headline (*word* is shown in the accent color),
     // and the credential line under the buttons.
-    kicker: "Applied AI · Hydroinformatics · GeoAI",
-    tagline: "Smarter models for *water* and *infrastructure.*",
+    kicker: "Civil Engineering · Hydroinformatics · GeoAI",
+    tagline: "Engineering *water infrastructure,* advanced with *AI.*",
     credential: {
-      title: "PhD Candidate · Applied AI & Hydroinformatics",
+      title: "PhD Candidate · Civil Engineering (Hydroinformatics) & Applied AI",
       sub: "Brigham Young University · Alma Mater Europaea",
     },
     citeAs: "Teklu, H.", // your name as it appears in author lists (shown in bold)
@@ -21,17 +21,17 @@ window.SITE = {
       { short: "BYU", name: "Hydroinformatics Lab, Brigham Young University" },
       { short: "AMEU", name: "Applied Artificial Intelligence, Alma Mater Europaea" },
     ],
-    headline: "Applied AI & Hydroinformatics PhD Candidate",
-    subline: "Water Data Scientist · Water Resources Engineer",
+    headline: "Civil & Water Resources Engineer · PhD Candidate",
+    subline: "Hydroinformatics · Applied AI",
     location: "Provo, Utah, USA",
     summary:
-      "I build AI for water and public infrastructure: liquid and spiking neural networks, reinforcement learning, and machine learning for satellite Earth observation, grounded in more than ten years of designing dams, irrigation schemes, and water-supply systems.",
+      "I am a civil and water resources engineer with more than ten years of designing dams, irrigation schemes, and water-supply systems. I now bring AI and satellite Earth observation to the same problems: groundwater, streamflow, and infrastructure design.",
     resume: "", // e.g. "assets/resume.pdf" — leave empty to hide the button
     // Headline numbers shown under the introduction.
     stats: [
-      { value: "2", label: "concurrent PhDs, in applied AI and hydroinformatics" },
       { value: "9 yrs", label: "of water engineering practice" },
       { value: "20,000+ ha", label: "of irrigation command area designed" },
+      { value: "2", label: "concurrent PhDs, in civil engineering and applied AI" },
       { value: "5", label: "papers and preprints" },
     ],
     links: [
@@ -44,39 +44,51 @@ window.SITE = {
   },
 
   about: [
-    "I am an AI researcher and water resources engineer completing two concurrent PhDs: Applied Artificial Intelligence at Alma Mater Europaea and Hydroinformatics at Brigham Young University.",
-    "My AI work centers on continuous-time (liquid) and spiking neural networks, reinforcement learning, and machine learning for satellite Earth observation, applied to civil engineering problems: groundwater assessment, streamflow bias correction, infrastructure design, and pedestrian road safety.",
-    "More than ten years designing dams, irrigation schemes, water-supply systems, and flood-protection infrastructure give me a practical sense of what AI outputs mean for public infrastructure decisions, and of how to check whether a model is physically wrong before anyone relies on it.",
+    "I am a civil engineer specializing in water resources, completing two concurrent PhDs: Civil Engineering (Hydroinformatics) at Brigham Young University and Applied Artificial Intelligence at Alma Mater Europaea.",
+    "My research applies AI to civil engineering problems: groundwater assessment, streamflow bias correction, irrigation network design, and pedestrian road safety. The methods include machine learning for satellite Earth observation, continuous-time (liquid) and spiking neural networks, and reinforcement learning. Design experience gives me a practical sense of what a model output means for an infrastructure decision, and of how to check whether it is physically wrong before anyone relies on it.",
+    "My engineering career began in Ethiopia, where I spent nine years designing dams, irrigation schemes, water-supply systems, and road drainage structures, from feasibility study through construction supervision.",
   ],
 
   interests: [
     {
-      title: "Liquid neural networks",
-      text: "Closed-form continuous-time (CfC/LTC) models for irregular, variable-time-step environmental and hydrologic signals.",
-    },
-    {
-      title: "Spiking neural networks",
-      text: "Event-driven, low-power networks for real-time perception and sequential decision-making.",
+      title: "Water infrastructure design",
+      text: "Dams, irrigation networks, and water-supply systems, with terrain-aware tools that speed up layout and sizing.",
     },
     {
       title: "Groundwater & Earth observation",
       text: "Estimating storage change from GRACE/GRACE-FO, GLDAS, CHIRPS, and sparse in-situ well records.",
     },
     {
-      title: "Reinforcement learning",
-      text: "Optimization and design decision support for water-resources systems.",
+      title: "Road safety",
+      text: "Pedestrian detection and crossing-intent prediction from event-based (DVS) cameras.",
     },
     {
       title: "Responsible AI for infrastructure",
       text: "Independent validation, physically consistent models, and engineer-in-the-loop tools.",
     },
     {
-      title: "Road safety",
-      text: "Pedestrian detection and crossing-intent prediction from event-based (DVS) cameras.",
+      title: "Liquid & spiking neural networks",
+      text: "Continuous-time (CfC/LTC) models for irregular hydrologic signals, and event-driven networks for real-time perception.",
+    },
+    {
+      title: "Reinforcement learning",
+      text: "Optimization and design decision support for water-resources systems.",
     },
   ],
 
   skills: [
+    {
+      group: "Civil & water engineering",
+      items: ["Hydrologic & hydraulic modeling", "Flood analysis", "Groundwater modeling", "Irrigation, dam & water-supply design"],
+    },
+    {
+      group: "Hydrologic & hydraulic",
+      items: ["HEC-HMS", "HEC-RAS", "WMS", "SMS", "WaterCAD", "AutoCAD", "Civil 3D"],
+    },
+    {
+      group: "Earth observation & GIS",
+      items: ["GRACE/GRACE-FO", "GLDAS", "ERA5", "CHIRPS", "Sentinel-1/2", "EMIT", "Google Earth Engine", "ArcGIS", "QGIS"],
+    },
     {
       group: "Artificial intelligence",
       items: ["Deep learning", "GeoAI", "Liquid neural networks (CfC/LTC)", "Spiking neural networks", "Reinforcement learning", "Time-series imputation", "Matrix completion", "Computer vision", "Physics-informed ML"],
@@ -89,30 +101,9 @@ window.SITE = {
       group: "Programming & data",
       items: ["Python (NumPy, Pandas)", "R", "SQL", "JavaScript", "Django", "Flutter", "Docker", "Git", "Tethys Platform"],
     },
-    {
-      group: "Earth observation & GIS",
-      items: ["GRACE/GRACE-FO", "GLDAS", "ERA5", "CHIRPS", "Sentinel-1/2", "EMIT", "Google Earth Engine", "ArcGIS", "QGIS"],
-    },
-    {
-      group: "Hydrologic & hydraulic",
-      items: ["HEC-HMS", "HEC-RAS", "WMS", "SMS", "WaterCAD", "AutoCAD", "Civil 3D"],
-    },
-    {
-      group: "Engineering",
-      items: ["Hydrologic & hydraulic modeling", "Flood analysis", "Groundwater modeling", "Irrigation, dam & water-supply design"],
-    },
   ],
 
   projects: [
-    {
-      title: "GEOGloWS Runoff Bias Correction",
-      period: "Google-funded · Sep 2026 — Present",
-      description:
-        "Bias correction of GEOGloWS global streamflow forecasts using an LSTM, applied at the runoff level before routing.",
-      tags: ["Streamflow forecasting", "LSTM", "Bias correction"],
-      link: "",
-      repo: "https://github.com/anomaitech/geoglows_grid_runoff_correction",
-    },
     {
       title: "CanalForge",
       period: "Terrain-aware irrigation network design",
@@ -123,22 +114,13 @@ window.SITE = {
       repo: "",
     },
     {
-      title: "TethysDesk",
-      period: "No-code app builder for the Tethys Platform",
+      title: "GEOGloWS Runoff Bias Correction",
+      period: "Google-funded · Sep 2026 — Present",
       description:
-        "Lets water scientists assemble Tethys web apps without writing code. Placed 2nd at the Tethys Foundation Hackathon, Chicago (2026). Developer and maintainer.",
-      tags: ["Tethys Platform", "No-code", "Web apps"],
+        "Bias correction of GEOGloWS global streamflow forecasts using an LSTM, applied at the runoff level before routing.",
+      tags: ["Streamflow forecasting", "LSTM", "Bias correction"],
       link: "",
-      repo: "",
-    },
-    {
-      title: "Unsupervised Spiking Feature Learning",
-      period: "Event-based pedestrian crossing detection",
-      description:
-        "A single layer of spiking neurons trained with local winner-take-all STDP learns features from unlabelled DVS-PedX event frames; only a linear readout is supervised. Reaches 90.3% accuracy and 0.936 AUROC, within 0.007 AUROC of a fully supervised spiking network.",
-      tags: ["Spiking neural networks", "STDP", "Event cameras"],
-      link: "https://arxiv.org/abs/2609.31671",
-      repo: "https://github.com/anomaitech/anomaitech-unsupervised_snn_pedx",
+      repo: "https://github.com/anomaitech/geoglows_grid_runoff_correction",
     },
     {
       title: "Great Salt Lake Basin Groundwater Story",
@@ -159,11 +141,11 @@ window.SITE = {
       repo: "https://github.com/anomaitech/tethys_gslb",
     },
     {
-      title: "Spiking Actor-Critic RL Agent",
-      period: "snnTorch · PyTorch",
+      title: "TethysDesk",
+      period: "No-code app builder for the Tethys Platform",
       description:
-        "An actor-critic agent built from spiking neurons and trained on the CartPole control benchmark, testing event-driven networks for low-power sequential decision-making.",
-      tags: ["Spiking neural networks", "Reinforcement learning"],
+        "Lets water scientists assemble Tethys web apps without writing code. Placed 2nd at the Tethys Foundation Hackathon, Chicago (2026). Developer and maintainer.",
+      tags: ["Tethys Platform", "No-code", "Web apps"],
       link: "",
       repo: "",
     },
@@ -173,6 +155,24 @@ window.SITE = {
       description:
         "Differentiable parameter learning (dPL) combined with CfC/LTC architectures for continuous-time, variable-time-step hydrologic modeling.",
       tags: ["Physics-informed ML", "Liquid neural networks", "Hydrology"],
+      link: "",
+      repo: "",
+    },
+    {
+      title: "Unsupervised Spiking Feature Learning",
+      period: "Event-based pedestrian crossing detection",
+      description:
+        "A single layer of spiking neurons trained with local winner-take-all STDP learns features from unlabelled DVS-PedX event frames; only a linear readout is supervised. Reaches 90.3% accuracy and 0.936 AUROC, within 0.007 AUROC of a fully supervised spiking network.",
+      tags: ["Spiking neural networks", "STDP", "Event cameras"],
+      link: "https://arxiv.org/abs/2609.31671",
+      repo: "https://github.com/anomaitech/anomaitech-unsupervised_snn_pedx",
+    },
+    {
+      title: "Spiking Actor-Critic RL Agent",
+      period: "snnTorch · PyTorch",
+      description:
+        "An actor-critic agent built from spiking neurons and trained on the CartPole control benchmark, testing event-driven networks for low-power sequential decision-making.",
+      tags: ["Spiking neural networks", "Reinforcement learning"],
       link: "",
       repo: "",
     },
@@ -218,16 +218,16 @@ window.SITE = {
 
   education: [
     {
-      role: "PhD Candidate, Applied Artificial Intelligence",
-      org: "Alma Mater Europaea, Slovenia (online)",
-      period: "Expected Dec 2027",
-      text: "Liquid neural networks, spiking neural networks, and reinforcement learning for civil and environmental systems, including road safety. GPA 9.9/10.",
-    },
-    {
       role: "PhD Candidate, Civil Engineering (Hydroinformatics)",
       org: "Brigham Young University, USA",
       period: "Expected May 2027",
       text: "Groundwater storage estimation, hydrologic time-series imputation, remote sensing, and AI for water resources. GPA 3.95/4.0.",
+    },
+    {
+      role: "PhD Candidate, Applied Artificial Intelligence",
+      org: "Alma Mater Europaea, Slovenia (online)",
+      period: "Expected Dec 2027",
+      text: "Liquid neural networks, spiking neural networks, and reinforcement learning for civil and environmental systems, including road safety. GPA 9.9/10.",
     },
     {
       role: "MSc, Water & Sustainable Development (Hydroinformatics & Digital Innovation)",
@@ -388,7 +388,7 @@ window.SITE = {
   ],
 
   contact: {
-    text: "I am glad to hear about research collaborations, AI for water and infrastructure, and opportunities in applied AI, GeoAI, and hydroinformatics.",
+    text: "I am glad to hear about research collaborations and opportunities in civil and water resources engineering, hydroinformatics, GeoAI, and applied AI.",
     email: "anommltech@gmail.com",
   },
 };
