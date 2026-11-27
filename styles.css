@@ -252,3 +252,5 @@ h3.sub { font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transfor
   .js-anim .reveal { opacity: 1; transform: none; transition: none; }
   .project, .tile, .btn { transition: none; }
 }
+
+@media (max-width: 350px) { .pill { white-space: normal; } }
