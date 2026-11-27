@@ -239,13 +239,13 @@ window.SITE = {
       role: "MSc, Software Engineering",
       org: "Sheba University, Ethiopia",
       period: "2017",
-      text: "",
+      text: "Thesis project: a student information management system.",
     },
     {
       role: "BSc, Water Resources & Environmental Engineering",
       org: "Jimma University, Ethiopia",
       period: "2012",
-      text: "",
+      text: "Final-year project: the Genale Dawa hydropower project.",
     },
   ],
 
