@@ -233,7 +233,7 @@ window.SITE = {
       role: "MSc, Water & Sustainable Development (Hydroinformatics & Digital Innovation)",
       org: "IHE Delft, Netherlands",
       period: "2024",
-      text: "",
+      text: "Thesis research: a machine-learning surrogate model of a distributed hydrological model (MIKE SHE) for climate change impact assessment.",
     },
     {
       role: "MSc, Software Engineering",
